@@ -14,6 +14,7 @@ public class App {
         SecretCode obj1 = new SecretCode(inString);
         int length = obj1.getStringLen(inString);
         System.out.println("Your string length is: " + length);
+        scan.close();
 
         // do the string validation
         do {
