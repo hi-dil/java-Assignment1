@@ -1,3 +1,11 @@
+/*
+    / 66661 MOHAMAD HAIDIL BIN IDRIS
+    / 66783 MUHAMMAD AIMAN BIN MOHD AZMI
+    / 67872 SYAZZWA NATASYA BINTI MOHD ZAIDI
+    / 66477 LIM AI XIN
+    / 64631 AMNAH NADIAH BINTI SUFIAN
+ */
+
 import java.util.Scanner;
 
 public class App {
@@ -14,7 +22,6 @@ public class App {
         SecretCode obj1 = new SecretCode(inString);
         int length = obj1.getStringLen(inString);
         System.out.println("Your string length is: " + length);
-        scan.close();
 
         // do the string validation
         do {
@@ -29,9 +36,12 @@ public class App {
                 obj1.setInString(inString);
 
                 System.out.println("Your string length is: " + obj1.getStringLen(inString));
+                length = obj1.getStringLen(inString);
             }
         } while (!obj1.checkStringValidity(inString));
 
+        System.out.println(inString + length);
         System.out.println("Outstring: " + obj1.ShiftChar(inString, length));
+        scan.close();
     }
 }
