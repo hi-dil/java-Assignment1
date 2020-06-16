@@ -1,9 +1,9 @@
 /*
-    / 66661 MOHAMAD HAIDIL BIN IDRIS
-    / 66783 MUHAMMAD AIMAN BIN MOHD AZMI
-    / 67872 SYAZZWA NATASYA BINTI MOHD ZAIDI
-    / 66477 LIM AI XIN
-    / 64631 AMNAH NADIAH BINTI SUFIAN
+    * 66661 MOHAMAD HAIDIL BIN IDRIS
+    * 66783 MUHAMMAD AIMAN BIN MOHD AZMI
+    * 67872 SYAZZWA NATASYA BINTI MOHD ZAIDI
+    * 66477 LIM AI XIN
+    * 64631 AMNAH NADIAH BINTI SUFIAN
  */
 
 import java.util.Scanner;
@@ -20,8 +20,6 @@ public class App {
         String inString = scan.nextLine();
 
         SecretCode obj1 = new SecretCode(inString);
-        int length = obj1.getStringLen(inString);
-        System.out.println("Your string length is: " + length);
 
         // do the string validation
         do {
@@ -31,16 +29,15 @@ public class App {
 
                 System.out.print("New input: ");
                 inString = scan.nextLine();
-
-                System.out.println("Your new string is: " + inString);
                 obj1.setInString(inString);
-
-                System.out.println("Your string length is: " + obj1.getStringLen(inString));
-                length = obj1.getStringLen(inString);
             }
         } while (!obj1.checkStringValidity(inString));
 
-        System.out.println(inString + length);
+        System.out.println("inString: " + inString);
+
+        int length = obj1.getStringLen(inString);
+        System.out.println("Your string length is: " + length);
+
         System.out.println("Outstring: " + obj1.ShiftChar(inString, length));
         scan.close();
     }
