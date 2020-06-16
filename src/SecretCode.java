@@ -1,3 +1,11 @@
+/*
+     * 66661 MOHAMAD HAIDIL BIN IDRIS
+     * 66783 MUHAMMAD AIMAN BIN MOHD AZMI
+     * 67872 SYAZZWA NATASYA BINTI MOHD ZAIDI
+     * 66477 LIM AI XIN
+     * 64631 AMNAH NADIAH BINTI SUFIAN
+ */
+
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 //both of these use for validation method
@@ -57,6 +65,7 @@ public class SecretCode {
                 'y', 'z', ' '
         };
 
+        // used to count how many whitespace in string
         for (char c : inStringArray) {
             if (c == ' ') {
                 spaceCount++;
