@@ -8,7 +8,7 @@
 
 import java.util.Scanner;
 
-public class App {
+public class Assignment {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
